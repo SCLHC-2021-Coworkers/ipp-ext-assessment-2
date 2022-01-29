@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>제품 검색 - Customer Information Service</title>
+<link rel="stylesheet" href="../stylesheet/main.css">
+<style type="text/css">
+	#prodCode {
+		padding-top: 0.5rem;
+		padding-bottom: 0.5rem;
+		text-align: center;
+	}
+</style>
+</head>
+<body>
+	<div class="container">
+		<div class="vertical-align">
+			<form action="searchResult.jsp">
+				<h1 class="banner">제조사명 조회</h1>
+				<table>
+					<tbody>
+						<tr>
+							<td colspan="2">제품코드(4) 입력</td>
+						</tr>
+						<tr>
+							<td>제품코드</td>
+							<td>
+								<input type="text" name="prodCode" id="prodCode" maxlength="4">
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<button type="submit" id="prodCodeSubmit">확인</button>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</form>
+		</div>
+	</div>
+	<script>
+		var prodCode = document.getElementById('prodCode');
+		prodCode.oninput = function () {
+			this.value = this.value.toUpperCase();
+		};
+	</script>
+</body>
+</html>
