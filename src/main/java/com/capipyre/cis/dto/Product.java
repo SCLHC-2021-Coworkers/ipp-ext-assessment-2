@@ -1,4 +1,4 @@
-package com.capipyre.cis.dao;
+package com.capipyre.cis.dto;
 
 public class Product {
 
