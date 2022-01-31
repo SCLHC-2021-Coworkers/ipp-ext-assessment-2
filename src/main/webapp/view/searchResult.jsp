@@ -1,5 +1,5 @@
 <%@page import="java.util.Calendar"%>
-<%@page import="com.capipyre.cis.dao.Product"%>
+<%@page import="com.capipyre.cis.dto.Product"%>
 <%@page import="java.util.Date"%>
 <%@page import="java.sql.PreparedStatement"%>
 <%@page import="java.sql.ResultSet"%>
